@@ -1,0 +1,97 @@
+<htm>
+    <head>
+        
+    </head>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffcccc, #ff99cc, #ff6699);
+        }
+
+        .form-container {
+            background-color: #f49ebb;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 550px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6699;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff3366;
+        }
+
+
+    </style>
+    <body>
+        <div class="form-container">
+            <h2>Registration Form</h2>
+            <form id="registrationForm"    action="/signupsubmit" method="post"><br><br>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="first_name" required>
+                </div> 
+                <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="name" name="last_name" required>
+                </div> 
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required><br>
+                
+              </div>
+              <div class="form-group">
+                <button type="submit" href="#">Sign up</button>
+        
+              </div>
+              
+              
+    </body>
+</htm>

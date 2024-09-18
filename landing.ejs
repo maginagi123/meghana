@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  background-color: #e66df6;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #ffc1cc;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #ff99aa;
+}
+
+h1 {
+  color: #ff5c8a;
+  font-size: 36px;
+}
+
+p {
+  color: #ff5c8a;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Medium Pink */
+.search-bar {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ff99aa;
+  border: 1px solid #ff5c8a;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff5c8a;
+}
+
+button {
+  background-color: #ff5c8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff85a1;
+}
+
+/* Darker Pink */
+#stock {
+  background-color: #ff5c8a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  color: white;
+}
+
+.detail p {
+  font-size: 18px;
+  color: white;
+}
+
+#red {
+  color: red;
+  font-weight: bold;
+}
+
+.detail span {
+  font-size: 16px;
+  color: #ffe4e1;
+}
+
+u {
+  color: white;
+}
+
+
+</style>
+<body>
+  <header>
+    <h1>Stock Tracker</h1>
+    <p>Find real-time stock information.</p>
+    <div class="auth-buttons">
+      <a href="signup">Sign Up</a>
+      <a href="signin">Sign In</a>
+    </div>
+  </header>
+  <main>
+    <section class="search-bar">
+      <form action="#">
+        <label for="symbol">Enter Stock Symbol:</label>
+        <input type="text" id="symbol" name="symbol" placeholder="e.g. AAPL, GOOG" onclick="showPopup()">
+        <button type="submit" >Search</button>
+      </form>
+    </section>
+
+
+    <section class="stock-details hidden"  id="stock">
+      <h2>Stock Details</h2>
+      <div class="detail">
+        <p>Company Name:</p>
+        <span id="company-name"></span>
+      </div>
+      <div class="detail">
+        <p>Current Price:</p>
+        <span id="current-price"></span>
+      </div>
+      <div class="detail">
+        <p>Change:</p>
+        <span id="change"></span>
+      </div>
+      <div class="detail">
+        <p>Day High:</p>
+        <span id="day-high"></span>
+      </div>
+      <div class="detail">
+        <p>Day Low:</p>
+        <span id="day-low"></span>
+      </div>
+      <div class="detail">
+        <p>52 Week High:</p>
+        <span id="year-high"></span>
+      </div>
+      <div class="detail">
+        <p>52 Week Low:</p>
+        <span id="year-low"></span>
+      </div>
+    </section>
+  </main>
+  <script>
+  function showPopup() {
+    alert("Please SignUp to get the information");
+  }
+</script>
+</body>
+</html>

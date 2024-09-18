@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.5.0",
+    "request": "^2.88.2"
+  },
+  "name": "project",
+  "description": "A basic webpage using express js,node js and firestore database.It gives the information about a particular stock using the input stock symbol provided by the user.",
+  "version": "1.0.0",
+  "main": "x.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node x.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
